@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/*
+Template:       glowme
+Theme Name:     Glowme Child
+Theme URI:      http://themeforest.net/user/Qodex/portfolio?ref=Qodex
+Author:         LA Studio
+Author URI:     http://themeforest.net/user/Qodex/portfolio?ref=Qodex
+Description:    GlowME - Cosmetic & Plastic Surgery WordPress Theme
+Version:        1.0.0
+Requires at least: 5.9
+Requires PHP:   7.0
+Tags:           beauty, beauty clinic, clinic, cosmetic, cosmetic clinic, cosmetic surgery, elementor, healthcare, hospital, medical, medical theme, plastic surgeon, plastic surgery, surgeon, surgery
+License:        GNU General Public License
+License URI:    licence/GPL.txt
+Text Domain:    glowme-child
+Domain Path:    /languages/
+Elementor tested up to: 3.16
+Elementor Pro tested up to: 3.16
+WooCommerce tested up to: 8.1.0
+*/
+section#comments {
+  width: 100%;
+}
+
+.lakitdoc-enable-header-transparency .lakit-site-wrapper.lakit--is-vheader > .elementor-location-header {
+  top: 0;
+}
+
+.lakit-vheader-pleft .lakit-hamburger-panel-slide-effect.lakit-hamburger-panel-left-position.lakit-hbg-is-behind .lakit-hamburger-panel__instance {
+  left: 0 !important;
+}
+
+.lakit-site-wrapper .lakit-carousel .swiper-pagination-fraction {
+  mix-blend-mode: normal;
+}
+
+.lakit-carousel .swiper-pagination-fraction span[class]:before {
+  content: "0";
+}
+
+.lakit-carousel .swiper-pagination-fraction .swiper-pagination-current {
+  font-size: 2em;
+}
+
+.lakit-dots--vertical-yes .lakit-carousel__dots {
+  height: auto !important;
+}
+.lakit-dots--vertical-yes .lakit-carousel__dots .swiper-pagination-bullet {
+  position: static;
+}
+
+body.ltr .la-custom-badge.custom-hot {
+  background-color: var(--theme-primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 5px 40px 5px 30px;
+  line-height: 20px;
+  right: auto;
+  left: -20px;
+  font-family: var(--theme-heading-font-family);
+}
+
+body.ltr .la-custom-badge.custom-hot:after {
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  right: 0;
+  content: "";
+  top: 0;
+}
+
+body.ltr .la-custom-badge.custom-hot:before {
+  content: "";
+  left: 0;
+  top: 100%;
+  border-left: 20px solid transparent;
+  border-top: 10px solid var(--theme-secondary-color);
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.lastudio-countdown-timer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 360px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.lastudio-countdown-timer__separator {
+  display: none;
+}
+
+.lastudio-countdown-timer__item-value {
+  font-size: 36px;
+  font-weight: 500;
+  color: #C2943A;
+  line-height: 1;
+}
+
+.lastudio-countdown-timer__item-label {
+  font-weight: 500;
+  color: #C1C1C1;
+  font-size: 14px;
+}
+
+.lastudio-countdown-timer__item {
+  padding: 0 10px;
+}
+
+.lastudio-countdown--inprod.elementor-lastudio-countdown-timer {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .lastudio-countdown-timer__item-value {
+    font-size: 26px;
+  }
+}
+.lakit-nav--horizontal > .menu-item > a > .lakit-nav-arrow {
+  margin-top: 0;
+}
+.lakit-nav--horizontal .lakit-nav-arrow {
+  margin-left: 5px;
+}
+
+.wc-page-content .entry-summary .variations {
+  width: 500px;
+  max-width: 100%;
+}
+
+.glowme-demo-item figure.wp-caption {
+  position: relative;
+  box-shadow: 0 5px 10px 0 #0000000d;
+  overflow: hidden;
+}
+
+.glowme-demo-item figure.wp-caption img {
+  transition: all 0.3s;
+}
+
+.glowme-demo-item figure.wp-caption:hover img {
+  transform: scale(1.1);
+}
+
+.glowme-demo-item figure.wp-caption a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.glowme-demo-item figure.wp-caption:hover a:after {
+  opacity: 0.5;
+}
+
+.glowme-demo-item figure.wp-caption .wp-caption-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--theme-heading-font-family);
+  font-size: var(--theme-h3-font-size);
+  font-style: normal;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.glowme-demo-item figure.wp-caption:hover .wp-caption-text {
+  opacity: 1;
+}
+
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top {
+  background: none !important;
+}
+
+.lakit-nav--vertical-sub-bottom .lakit-nav-arrow {
+  margin-left: 0.7em;
+  margin-right: -1.7em;
+}
+
+.elementor-widget-lakit-postformat-content .postformat-content.postformat-content--link {
+  background-image: url("blog-link-bg.html");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.need-check-active li.elementor-icon-list-item.current-menu-item a .elementor-icon-list-text {
+  color: var(--theme-secondary-color);
+}
+
+.elementor-widget-text-path .elementor-widget-empty-icon {
+  display: none !important;
+}
+
+.swatch-wrapper[data-attribute=pa_size] .swatch-anchor {
+  --lakit-swatch--height: 36px !important;
+}
+
+.swatch-wrapper[data-attribute=pa_brand] .swatch-anchor {
+  --lakit-swatch--height: 36px !important;
+  padding: 0 1em;
+}
+
+img[src$="woocommerce-placeholder.png"] {
+  filter: brightness(0.97);
+}
+
+.lakit-posts__meta__item--category .cspr {
+  display: none;
+}
+
+.lakit-posts__meta__item--category a:not(:last-child) {
+  display: none;
+}
+
+.lakit-breadcrumbs__item-target {
+  max-width: 30ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+ul.glowme-ul-check {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+}
+
+.glowme-ul-check li {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: var(--theme-heading-font-family);
+  color: var(--theme-heading-font-color);
+}
+
+.glowme-ul-check li:before {
+  content: "";
+  font-family: "LaStudioIcons";
+  width: 50px;
+  height: 50px;
+  background: var(--theme-primary-color);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.glowme-ul-check li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.postformat-content--v .la-popup .postformat--icon:before {
+  content: "Play video";
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.postformat-content--v .la-popup .postformat--icon i {
+  display: none;
+}
+
+.postformat-content--v .la-popup .postformat--icon {
+  background: none;
+  border: 1px solid #fff;
+  font-size: 14px;
+  color: #fff;
+  width: 5em;
+  height: 5em;
+}
+
+.product_desc-row .glowme-ul-check li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.product_desc-row ul.glowme-ul-check {
+  margin: 25px 0;
+}
+
+.elementor-lakit-portfolio .lakit-posts.preset-grid-2 .lakit-posts__thumbnail + .lakit-posts__inner-content {
+  top: auto !important;
+}
+
+@media (max-width: 1280px) {
+  .glowme-ul-check li {
+    gap: 15px;
+  }
+
+  .glowme-ul-check li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .glowme-ul-check li:before {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-cover {
+    min-height: 180px !important;
+    margin: 10px 0 !important;
+  }
+
+  .preset-grid-2 .lakit-posts__item-g:not(.swiper-slide-active) .lakit-posts__item:nth-child(2) {
+    opacity: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .variations_form span.swatch-anchor {
+    --lakit-swatch--width: 28px !important;
+    --lakit-swatch--height: 28px !important;
+  }
+}
+@media (min-width: 1280px) {
+  .lakit-product-images .flex-viewport .woocommerce-product-gallery__image img {
+    max-width: 485px;
+    max-height: 485px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
